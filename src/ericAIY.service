@@ -1,0 +1,10 @@
+Description=My awesome assistant app
+
+[Service]
+ExecStart=/bin/bash -c '/home/pi/AIY-voice-kit-python/env/bin/python3 -u src/ericAIY.py'
+WorkingDirectory=/home/pi/AIY-voice-kit-python
+Restart=always
+User=pi
+
+[Install]
+WantedBy=multi-user.target
